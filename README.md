@@ -51,7 +51,7 @@
 --------------------------------------------------------------
 ## 📨Contácto 
 
-### Vistá el sitio Web: <i>https://franciscopassarelli.github.io/BurgerBeer/</i>
+### Vistá el sitio Web: <i>https://franciscopassarelli.github.io/BurguerBeer/</i>
 ### Email: <i>franciscopassarelli7@gmail.com</i>
 ### Linkedin: <i>https://www.linkedin.com/in/franciscopassarelli/</i> 
 ### GitHub: <i>https://github.com/franciscopassarelli</i>
