@@ -1,0 +1,341 @@
+body{
+    background:linear-gradient(#310000,#310000,#130000) ;
+    font-family: system-ui;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width: 40px;
+    cursor: pointer;
+}
+header .shopping span{
+    cursor: pointer;
+    background: rgb(151, 38, 38);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background:linear-gradient( #652119cd, #aa3528cd, #ff361fec);
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+
+
+
+
+
+.list .item button {
+    cursor: pointer;
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.list .item button:hover {
+    background-color: #2a303a;
+}
+
+.list .item button:active {
+    background-color: #1C1F25;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453e3b;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    gap: 3px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+
+    border:3px solid #1C1F25;
+  background-color: #cea606;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  
+ }
+
+
+.card .checkOut div:nth-child(2){
+    cursor: pointer;
+    background-color: #0e1014;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 3px;
+}
+.listCard li img {
+    width:90%;
+    border-radius: 5px;
+    border: 2px solid #000; /* Borde de 2px de ancho de color negro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra de 5px de desenfoque en negro */
+}
+
+
+
+.listCard li button{
+    cursor: pointer;
+    background-color: #1C1F25;
+    border: none;
+}
+.listCard li button:hover{
+    background-color: #2a303a;
+}
+
+.listCard li button:active{
+    background-color: #1C1F25;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    transform: translateY(2px);
+}
+
+.listCard .count{
+    margin: 0 10px;
+}
+
+/* Estilo para el botón de volver */
+/* Estilo para el botón de volver */
+.back-button {
+    background-color: #ffbb00d8;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reducir el relleno interno para hacerlo más pequeño */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Colocar el botón de forma absoluta */
+    left: 10px; /* Alinear a la izquierda */
+}
+
+/* Estilo para el botón de volver al pasar el cursor por encima */
+.back-button:hover {
+    background-color: #b34500a4;
+}
+
+
+
+.buyButton{
+    cursor: pointer;
+    background-color: #35383f;
+    color: #fff;
+}
+
+.buyButton:hover{
+    background-color: #171a21;
+}
+
+.buyButton:active {
+    background-color: #1C1F25;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    transform: translateY(2px);
+}
+
+
+
+.closeShopping{
+    cursor: pointer;
+    background-color: #35383f;
+    color: #000000;
+}
+.closeShopping:hover{
+    background-color: #171a21;
+
+}
+
+.closeShopping:active{
+    background-color: #1C1F25;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*comienzo de animación de Proyectos*/
+@keyframes textFadeInOut {
+    0%, 100% {
+      opacity: 0;
+      content: "Texto 1";
+    }
+    25% {
+      opacity: 1;
+      content: "Texto 2";
+    }
+    50% {
+      opacity: 1;
+      content: "Texto 3";
+    }
+
+  }
+  
+  
+
+
+
+    .TituloProducto {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+        color: #6e6e6e;
+        position: relative;
+    animation: textFadeInOut infinite; 
+    animation-duration: 5s; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
